@@ -62,7 +62,7 @@ local function compileFile(path)
 
 	fileCache[path] = getFileContent(path)
 
-	os.execute("erde compile" .. path)
+	os.execute("erde compile " .. path)
 end
 
 local function removeFile()
